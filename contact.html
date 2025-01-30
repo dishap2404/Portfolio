@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lan="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width = device-width,initial-scale= 1.0">
+
+  <title>Responsive Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background-color: #F6F4F0;
+      font-family: kanit;
+      line-height: 1.6;
+      color: black;
+      text-align: center;
+      size: 200%;
+    }
+
+    h2 {
+      color: #001A6E;
+      font-size: 300%;
+    }
+
+    header h2 {
+      font-size: 100;
+      font-style: italic;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      background-color: #001A6E;
+      padding: 1rem;
+      position: fixed;
+      top: 0;
+      width: 70%;
+      border-radius: 40px;
+      margin: 2% 17%;
+    }
+
+
+    nav a {
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+     #contact{
+        display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 2% 6%;
+      padding: 7rem 4rem;
+      line-height: 1.5;
+    }
+    .cinfo {
+      font-size: 25px;
+    }
+    @media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    width: 100%;
+  }
+</style>
+</head>
+
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <section id="contact">
+    <h2>Contact Me <img src="contact.png" height="30px" width="30px"></h2>
+    <div class="cinfo">
+      <h3><img src="gmail_logo.png" height="20px" width="20px"> MAIL</h3>
+      <p><a href="mailto:patildisha2404@gmail.com">patildisha2404@gmail.com</a></p>
+      <h3><img src="linkedin.png" height="20px" width="20px"> LINKEDIN</h3>
+      <p><a href="https://www.linkedin.com/in/disha-patil-290b26295" target="_blank">@disha-patil-290b26295</a></p>
+      <h3><img src="instagram_logo.png" alt="Instagram logo" height="20px" width="20px"> INSTAGRAM</h3>
+      <p>disha._.24</p>
+    </div>
+  </section>
+
+</body>
+
+</html>

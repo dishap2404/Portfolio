@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lan="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width = device-width,initial-scale= 1.0">
+
+  <title>Responsive Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      background-color: #001A6E;
+      padding: 1rem;
+      position: fixed;
+      top: 0;
+      width: 70%;
+      border-radius: 40px;
+      margin: 2% 17%;
+    }
+
+
+    nav a {
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    #skills {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 2% 6%;
+      padding: 7rem 4rem;
+      font-size: 180%;
+
+    }
+
+    .tech {
+      display: flex;
+      gap: 3rem;
+      align-items: center;
+      justify-content: center;
+      margin: 3%;
+    }
+
+    .skills_item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 4px 8px 0px #001A6E;
+      background-color: #bdcafb;
+      color: black;
+      border-radius: 20px;
+      max-width: 170px;
+      max-height: 175px;
+      box-sizing: border-box;
+      margin-top: 3%;
+      padding: 2%;
+      transition: all 0.3s ease;
+    }
+
+    .skills_item:hover {
+      transform: scale(1.1);
+      background-color: #001A6E;
+      box-shadow: 6px 10px 0px #bdcafb;
+      color: #F6F4F0;
+      cursor: pointer;
+    }
+
+    .skills_item img {
+      max-width: 80%;
+      max-height: 80%;
+      object-fit: contain;
+      padding: 0;
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #skills,
+  .skills_item {
+    width: 120px;
+    height: 120px;
+  }
+}
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav> 
+
+  <section id="skills">
+    <h2>Tech Stack</h2>
+    <div class="tech">
+      <div class="skills_item">
+        <p>C++</p>
+        <img src="cpp_logo.png" alt="CPP Logo">
+      </div>
+      <div class="skills_item">
+        <p>Java</p>
+        <img src="java_logo.png" alt="Java Logo">
+      </div>
+      <div class="skills_item">
+        <p>DSA</p>
+        <img src="DSA_logo.png" alt="DSA Logo">
+      </div>
+      <div class="skills_item">
+        <p>Python</p>
+        <img src="python_logo.png" alt="Python Logo">
+      </div>
+      <div class="skills_item">
+        <p>Html</p>
+        <img src="HTML_logo.png" alt="HTML Logo">
+      </div>
+      <div class="skills_item">
+        <p>CSS</p>
+        <img src="CSS_logo.png" alt="CSS Logo">
+      </div>
+    </div>
+  </section>
